@@ -3,6 +3,7 @@
 <p align="center">
   <img src="Figs/Fig_2.png" width="450" height="300">
 </p>
+
 ### Experiment 2.1 Top 6 layers vs. Middle 6 layers vs. Bottom 6 layers vs. All 12 layers
 ***
 We compared four variants of DASH: applying DASH to the top 6 layers, the middle 6 layers, the bottom 6 layers, and all 12 layers, to investigate its impact on unlearning performance. The results are summarized in Table 7 above, and we observed the following:
@@ -10,6 +11,7 @@ We compared four variants of DASH: applying DASH to the top 6 layers, the middle
 - [2] From the “forget” perspective, applying DASH to all 12 layers yields the best results. This aligns with Reviewer sCVm’s comment that bottom layers also contain data-specific knowledge.
 - [3] Applying DASH to the top 6 layers results in the best utility and a decent forget score.
 - **[Finding 2.1] As a result, these findings indicate that applying DASH to the upper layers can achieve a reasonable balance between utility and forgetting performance. Applying DASH to the bottom layers leads to a greater decrease in utility compared to the improvement in the forget score, resulting in lower overall NoMUS score.**
+
 ### Experiment 2.2 Layer-wise DASH Results
 ***
 We also conducted an additional ablation study where we applied DASH to only a single layer (with m=2) to explore how different layers react to DASH. The results are depicted in the figure above, and we observed the following:
